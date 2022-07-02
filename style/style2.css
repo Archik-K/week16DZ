@@ -1,0 +1,220 @@
+.container{
+    display: flex;
+    width: 502px;
+    color: #fff;
+    background-color: rgb(211 103 255);
+    border-color: rgb(211 103 255);
+    margin: 4% 10% 9% 34%;
+}
+.panel {
+    margin-top: 17px;
+    margin-bottom: 17px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
+    box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
+}
+
+.panel-primary {
+    width: 500px;
+    border-color:rgb(211 103 255);;
+}
+
+.panel-heading {
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.panel-primary>.panel-heading {
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    border-color: rgb(211 103 255);
+}
+
+
+.price{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding:  1% 1% 1% 1%;
+}
+
+.price1{
+    position: relative;
+    min-height: 1px;
+    padding-right: 12px;
+    padding-left: 15px;
+}
+
+.auction{   
+    display: flex; flex-direction: row;
+    justify-content: center;
+    padding: 1% 1% 1% 1%;
+}
+
+.auction1{   
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 87px;
+}
+
+.service1{
+    display: flex;
+    flex-direction: row;
+    padding: 1% 1% 1% 24%;
+    align-items: baseline;
+    justify-content: space-around;
+}
+
+.service{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1% 3% 1% 2%;
+    font-size: 86%;
+}
+
+
+.fuel{
+    display: flex;
+    flex-direction: row;
+    padding: 1% 18% 1% 22%;
+    align-items: baseline;
+    justify-content: space-evenly;
+}
+
+.fuel1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1% 1% 1% 3%;;
+    font-size: 86%;
+}
+
+.engine{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding:  1% 1% 1% 1%;  
+}
+
+.engine1{
+    
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+}
+
+.power{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding:  1% 1% 1% 1%;
+}
+
+.power1{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 41px;
+}
+
+.age{ 
+    display: flex;
+    flex-direction: row;
+    padding: 1% 30% 1% 10%;
+    align-items: baseline;
+    justify-content: space-evenly;
+}
+
+
+.age1{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    padding: 1% 1% 1% 2%;
+    min-height: 20px;
+    padding-top: 3px;
+    font-size: 91%;
+}
+
+.recipient{ 
+    display: flex;
+    flex-direction: row;
+    padding: 1% 23% 1% 21%;
+    align-items: baseline;
+    justify-content: space-evenly;
+}
+
+.recipient1{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    padding: 1% 1% 1% 2%;
+    min-height: 20px;
+    padding-top: 3px;
+    font-size: 91%;
+}
+
+#button{
+    font-size: 15px;
+    height: auto; 
+    border: 4px solid #850080;
+    border-radius: 60px;
+    background-color: #ffdbf9;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding:  1% 1% 1% 1%;
+}
+
+
+#button:hover {
+    box-shadow: inset 0 -1px 1px rgba(0,0,0,0), inset 0 1px 2px rgba(0,0,0,0), inset 0 0 0 60px rgba(239, 255, 15, 0.623);
+    }
+    
+#button:active {
+
+    box-shadow: inset 0 -1px 1px rgba(0,0,0,.1), inset 0 1px 2px rgba(0,0,0,.3), inset 0 0 0 60px rgb(255, 188, 63);
+    } 
+
+.button1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding:  3%;
+}
+
+#input1{   
+    width: 202px;
+    height: 21px;
+    border: 2px solid #a70ca1;
+    border-radius: 60px;
+    background-color: #ffeafc;
+}
+
+#input2{
+    width: 200px;
+    height: 21px; 
+    border: 2px solid #a70ca1;
+    border-radius: 60px;
+    background-color: #ffeafc;
+}
+#input3{
+    width: 200px;
+    height: 21px; 
+    border: 2px solid #a70ca1;
+    border-radius: 60px;
+    background-color: #ffeafc;
+}
+#selectvalue{
+    width: 208px;
+    height: 27px;
+    border: 2px solid #a70ca1;
+    border-radius: 60px;
+    background-color: #ffeafc;
+}
