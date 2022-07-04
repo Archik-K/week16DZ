@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style/style2.css">
+    <link rel="stylesheet" href="./style/style2.css">
     <title>Задание 2</title>
 </head>
 
@@ -33,23 +33,23 @@
 
 
                 <div class="service1">
-                    <label>Тип услуги</label>
-                    <div class="service" id="servs">
-                        <label><input type="radio"> Целый автомобиль</label>
-                        <label><input type="radio"> Распил легковой</label>
-                        <label><input type="radio"> Распил рамный</label>
-                        <label><input type="radio"> Конструктор легковой</label>
-                        <label><input type="radio"> Конструктор джип, м/а, европ. марки</label>
-                        <label><input type="radio"> Запчасти на палете</label>
-                    </div>
+                    <label class="service">Тип услуги</label>
+                    <select id="servs">
+                        <option> Целый автомобиль</option>
+                        <option> Распил легковой</option>
+                        <option> Распил рамный</option>
+                        <option> Конструктор легковой</option>
+                        <option> Конструктор джип, м/а, европ. марки</option>
+                        <option> Запчасти на палете</option>
+                    </select>
                 </div>
 
                 <div class="fuel">
                     <label>Тип топлива</label>
-                    <div class="fuel1" id="toplivo">
-                        <label><input type="radio">бензин (включая гибрид)</label>
-                        <label><input type="radio">дизельное топливо</label>
-                        <label><input type="radio">электрический</label>
+                    <div class="fuel1" id="toplivo" name ="topliv">
+                        <label><input type="radio" name="r1" value="1">бензин (включая гибрид)</label>
+                        <label><input type="radio" name="r1" value="2">дизельное топливо</label>
+                        <label><input type="radio" name="r1" value="3">электрический</label>
                     </div>
                 </div>
 
@@ -64,60 +64,28 @@
                 <div class="age">
                     <label>Возраст автомобиля</label>
                     <div class="age1" id="ages">
-                        <label><input type="radio"> Меньше 3 лет</label>
-                        <label><input type="radio"> От 3 до 5 лет</label>
-                        <label><input type="radio"> От 5 до 7 лет</label>
-                        <label><input type="radio"> Больше 7 лет</label>
+                        <label><input type="radio" name="r2" value="4"> Меньше 3 лет</label>
+                        <label><input type="radio" name="r2" value="5"> От 3 до 5 лет</label>
+                        <label><input type="radio" name="r2" value="6"> От 5 до 7 лет</label>
+                        <label><input type="radio" name="r2" value="7"> Больше 7 лет</label>
                     </div>
                 </div>
 
                 <div class="recipient">
                     <label>Получатель</label>
                     <div class="recipient1">
-                        <label><input type="checkbox">Физическое лицо</label>
-                        <label><input type="checkbox">Юридическое лицо</label>
+                        <label><input class="check" value="1000" type="checkbox" id="checkbox">Физическое лицо</label>
+                        <label><input class="check" value="2000" type="checkbox"  id="checkbox">Юридическое лицо</label>
                     </div>
                 </div>
                 <div class="button1">
-                    <button id="button">Рассчитать</button>
+                    <button id="button"  onclick="onclick(e)">Рассчитать</button>
                 </div>
             </div>
         </div>
     </main>
 
-    <script>
-        let calculator = [];
-        const selectvalue = document.querySelector('.selectvalue')
-        const outcome = document.querySelector('.button')
-        const servs = document.querySelector('.servs')
-        const toplivo = document.querySelector('.toplivo')
-        const ages = document.querySelector('.ages')
-        selectvalue.addEventListener('change', (e) => {
-            switch (selectvalue.value) {
-                case "ARAI BAYSIDE":
-                    arr[0] = 138800
-                    break;
-                case "HONDA HOKKAIDO":
-                    arr[0] = 200000
-                    break;
-                case "JU GIFU":
-                    arr[0] = 150000
-                    break;
-                case "NPS TOKYO":
-                    arr[0] = 170000
-                    break;
-                case "ORIX ATSUGI":
-                    arr[0] = 120000
-                    break;
-                case "SAA HAMAMATSU":
-                    arr[0] = 250000
-                    break;
-                case "TAA TONOKU":
-                    arr[0] = 110500
-                    break;
-            }
-        })
-    </script>
+    <script src="./index2.js">  </script>
 </body>
 
 </html>
