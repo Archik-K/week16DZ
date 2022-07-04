@@ -1,3 +1,4 @@
+/* НУЖНО ДОРАБОТАТЬ! */
 let arr = []
 const selectvalue = document.querySelector('.selectvalue')
 const btn = document.querySelector('.button')
@@ -114,5 +115,3 @@ btn.addEventListener('click', (e)=>{
         arr
     } */
 })
-
-/* НУЖНО ДОРАБОТАТЬ! */
