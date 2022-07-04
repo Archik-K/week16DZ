@@ -1,15 +1,17 @@
 /* НУЖНО ДОРАБОТАТЬ! */
 let arr = []
-const selectvalue = document.querySelector('.selectvalue')
-const btn = document.querySelector('.button')
-const servs = document.querySelector('.servs')
-const toplivo = document.querySelector('.toplivo')
-const ages = document.querySelector('.ages')
+const selectvalue = document.querySelector('.selectvalue');
+const btn = document.querySelector('.button');
+const servs = document.querySelector('.servs');
+const toplivo = document.querySelector('.toplivo');
+const dvigatel = document.querySelector('.input2')
+/* dvigatel.addEventListener('change', ()=>{console.log(dvigatel.value);}) */
+const ages = document.querySelector('.ages');
 
 
 const selects = document.querySelectorAll('select')
 console.log(selects);
-selects.forEach((item,index)=>{
+selects.forEach((item, index)=>{
     item.addEventListener('change', ()=>{
 
         switch (item.value) {
@@ -107,6 +109,11 @@ btn.addEventListener('click', (e)=>{
         }
         console.log('okey');
     })
+    if(volume>2){
+        arr.push(10000)
+    }else if (volume<2){
+        arr
+    }
   
 
 /*           if(volume > 2){
@@ -115,3 +122,5 @@ btn.addEventListener('click', (e)=>{
         arr
     } */
 })
+
+/* НУЖНО ДОРАБОТАТЬ! */
