@@ -90,7 +90,7 @@ console.log(arr);
 })
 
 
-/* function onclick(e){
+function onclick(e){
 
 let radio = document.getElementById("radio").value;
 let knopkas = e.target.value;
@@ -98,7 +98,7 @@ radio.textContent = "Вы выбрали: " + knopka;
 }
 for (let i = 0; i < i.length; i++) {
 topliv.knopkas[i].addEventListener("click", onclick);
-} */
+}
 
 btn.addEventListener('click', (e)=>{
     e.preventDefault()
@@ -114,7 +114,7 @@ btn.addEventListener('click', (e)=>{
     }else if (volume<2){
         arr
     }
-
+  
 
 /*           if(volume > 2){
         arr.push(10000)
